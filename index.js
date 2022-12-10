@@ -185,7 +185,7 @@ const createDelta = (data) => {
           },
           {
             path: `electrical.batteries.${data.name}.voltage`,
-            value: _.round(data.battery)
+            value: _.round(data.battery, 2)
           }
         ]
       }
